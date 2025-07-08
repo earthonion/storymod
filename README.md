@@ -1,3 +1,5 @@
+[Discord](https://discord.gg/RdM4kXQYTu)
+
 # Goals
 
   - FTP server hosting sd card
