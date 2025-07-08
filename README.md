@@ -1,4 +1,4 @@
-# Storypod jailbreak goals
+# Goals
 
   - FTP server hosting sd card
   - Logs over wifi/bt serial
