@@ -22,8 +22,7 @@
 
 ## Device & OS Internals
 
-  - **Storage:** The device uses NAND flash storage (NAND driver version 2018-11-20).
-  - **SD Card:** The SD card controller is identified as `mmc-0`, supporting speeds up to 52MHz.
+  - **Storage:** The device uses NOR flash storage.
   - **Audio:** The core media player is part of the `cedarx` framework. The audio HAL is configured for a specific format and rate (`format: 0x4, rate: 0x2000`).
  
 -----
