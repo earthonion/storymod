@@ -1,0 +1,684 @@
+.
+├── bedtime
+│   ├── system_white_noise_crickets.mp3
+│   └── system_white_noise_ocean.mp3
+├── craftie
+│   ├── EN
+│   │   ├── 010000000001
+│   │   │   ├── 010000000001.form
+│   │   │   ├── 2375.abc
+│   │   │   ├── 2901.abc
+│   │   │   ├── 2905.abc
+│   │   │   ├── 2906.abc
+│   │   │   ├── 2907.abc
+│   │   │   └── 2908.abc
+│   │   ├── 010000010004
+│   │   │   ├── 010000010004.form
+│   │   │   ├── 22196.abc
+│   │   │   ├── 22197.abc
+│   │   │   ├── 22198.abc
+│   │   │   ├── 22408.abc
+│   │   │   └── record.txt
+│   │   ├── 010000010006
+│   │   │   ├── 010000010006.form
+│   │   │   ├── 22192.abc
+│   │   │   ├── 22193.abc
+│   │   │   ├── 22194.abc
+│   │   │   ├── 22195.abc
+│   │   │   └── record.txt
+│   │   ├── 010000010011
+│   │   │   ├── 010000010011.form
+│   │   │   ├── 26072.abc
+│   │   │   ├── 26073.abc
+│   │   │   ├── 26074.abc
+│   │   │   ├── 26075.abc
+│   │   │   ├── 26076.abc
+│   │   │   ├── 26077.abc
+│   │   │   ├── 26571.abc
+│   │   │   ├── 26889.abc
+│   │   │   ├── 26890.abc
+│   │   │   ├── 26892.abc
+│   │   │   ├── 26893.abc
+│   │   │   ├── 26894.abc
+│   │   │   ├── 27205.abc
+│   │   │   └── record.txt
+│   │   ├── 010000010025
+│   │   │   ├── 010000010025.form
+│   │   │   ├── 69062.abc
+│   │   │   ├── 69063.abc
+│   │   │   ├── 69064.abc
+│   │   │   ├── 69065.abc
+│   │   │   ├── 69066.abc
+│   │   │   ├── 69067.abc
+│   │   │   ├── 69068.abc
+│   │   │   ├── 69069.abc
+│   │   │   ├── 69070.abc
+│   │   │   ├── 69071.abc
+│   │   │   ├── 69072.abc
+│   │   │   ├── 69073.abc
+│   │   │   ├── 69074.abc
+│   │   │   ├── 69075.abc
+│   │   │   ├── 69076.abc
+│   │   │   ├── 69077.abc
+│   │   │   ├── 69078.abc
+│   │   │   ├── 69079.abc
+│   │   │   ├── 69080.abc
+│   │   │   ├── 69081.abc
+│   │   │   ├── 69082.abc
+│   │   │   ├── 69083.abc
+│   │   │   ├── 69084.abc
+│   │   │   ├── 69085.abc
+│   │   │   ├── 69086.abc
+│   │   │   └── record.txt
+│   │   ├── 010000020004
+│   │   │   ├── 010000020004.form
+│   │   │   ├── 20842.abc
+│   │   │   ├── 20844.abc
+│   │   │   ├── 20845.abc
+│   │   │   ├── 20846.abc
+│   │   │   ├── 20847.abc
+│   │   │   ├── 20848.abc
+│   │   │   ├── 20849.abc
+│   │   │   ├── 20850.abc
+│   │   │   ├── 20851.abc
+│   │   │   ├── 20852.abc
+│   │   │   ├── 20853.abc
+│   │   │   ├── 87682.abc
+│   │   │   ├── 87683.abc
+│   │   │   ├── 87684.abc
+│   │   │   ├── 87685.abc
+│   │   │   ├── 87686.abc
+│   │   │   ├── 87687.abc
+│   │   │   ├── 87688.abc
+│   │   │   ├── 87689.abc
+│   │   │   ├── 87690.abc
+│   │   │   ├── 87691.abc
+│   │   │   ├── 87692.abc
+│   │   │   └── record.txt
+│   │   ├── 010000020012
+│   │   │   ├── 010000020012.form
+│   │   │   ├── 23011.abc
+│   │   │   ├── 24354.abc
+│   │   │   ├── 24355.abc
+│   │   │   ├── 24356.abc
+│   │   │   ├── 24357.abc
+│   │   │   ├── 24358.abc
+│   │   │   ├── 24359.abc
+│   │   │   ├── 24360.abc
+│   │   │   ├── 24361.abc
+│   │   │   ├── 24362.abc
+│   │   │   ├── 24369.abc
+│   │   │   ├── 24370.abc
+│   │   │   ├── 24371.abc
+│   │   │   ├── 24372.abc
+│   │   │   ├── 24373.abc
+│   │   │   ├── 24374.abc
+│   │   │   ├── 24375.abc
+│   │   │   ├── 24376.abc
+│   │   │   ├── 24377.abc
+│   │   │   ├── 24378.abc
+│   │   │   └── record.txt
+│   │   ├── 010000020027
+│   │   │   ├── 010000020027.form
+│   │   │   ├── 51724.abc
+│   │   │   ├── 51725.abc
+│   │   │   ├── 51726.abc
+│   │   │   ├── 51727.abc
+│   │   │   ├── 51728.abc
+│   │   │   ├── 51729.abc
+│   │   │   ├── 51730.abc
+│   │   │   ├── 51731.abc
+│   │   │   ├── 51732.abc
+│   │   │   ├── 51733.abc
+│   │   │   ├── 51734.abc
+│   │   │   ├── 51735.abc
+│   │   │   ├── 51736.abc
+│   │   │   ├── 51737.abc
+│   │   │   ├── 51738.abc
+│   │   │   ├── 51739.abc
+│   │   │   ├── 51740.abc
+│   │   │   ├── 53082.abc
+│   │   │   ├── 53083.abc
+│   │   │   ├── 53084.abc
+│   │   │   ├── 53085.abc
+│   │   │   ├── 53086.abc
+│   │   │   ├── 53087.abc
+│   │   │   ├── 53088.abc
+│   │   │   ├── 53089.abc
+│   │   │   ├── 53090.abc
+│   │   │   ├── 53091.abc
+│   │   │   └── record.txt
+│   │   ├── 010000040015
+│   │   │   ├── 010000040015.form
+│   │   │   ├── 41048.abc
+│   │   │   ├── 48798.abc
+│   │   │   ├── 48859.abc
+│   │   │   ├── 48910.abc
+│   │   │   ├── 48911.abc
+│   │   │   ├── 48912.abc
+│   │   │   ├── 48913.abc
+│   │   │   ├── 48914.abc
+│   │   │   ├── 48915.abc
+│   │   │   ├── 48916.abc
+│   │   │   ├── 50682.abc
+│   │   │   ├── 50683.abc
+│   │   │   ├── 50686.abc
+│   │   │   ├── 50687.abc
+│   │   │   ├── 50688.abc
+│   │   │   ├── 50689.abc
+│   │   │   ├── 50690.abc
+│   │   │   ├── 50691.abc
+│   │   │   ├── 50692.abc
+│   │   │   ├── 50693.abc
+│   │   │   ├── 50697.abc
+│   │   │   ├── 50698.abc
+│   │   │   ├── 50699.abc
+│   │   │   ├── 50700.abc
+│   │   │   ├── 50701.abc
+│   │   │   ├── 51629.abc
+│   │   │   └── record.txt
+│   │   ├── 010000040016
+│   │   │   ├── 010000040016.form
+│   │   │   ├── 41047.abc
+│   │   │   ├── 49155.abc
+│   │   │   ├── 49161.abc
+│   │   │   ├── 49162.abc
+│   │   │   ├── 49163.abc
+│   │   │   ├── 49164.abc
+│   │   │   ├── 49165.abc
+│   │   │   ├── 49166.abc
+│   │   │   ├── 49167.abc
+│   │   │   ├── 49168.abc
+│   │   │   ├── 50661.abc
+│   │   │   ├── 50662.abc
+│   │   │   ├── 50663.abc
+│   │   │   ├── 50664.abc
+│   │   │   ├── 50665.abc
+│   │   │   ├── 50666.abc
+│   │   │   ├── 50667.abc
+│   │   │   ├── 50668.abc
+│   │   │   ├── 50669.abc
+│   │   │   ├── 50670.abc
+│   │   │   ├── 50671.abc
+│   │   │   ├── 50672.abc
+│   │   │   ├── 50673.abc
+│   │   │   ├── 50676.abc
+│   │   │   ├── 50677.abc
+│   │   │   ├── 50678.abc
+│   │   │   ├── 50679.abc
+│   │   │   ├── 50680.abc
+│   │   │   └── record.txt
+│   │   ├── 010000040018
+│   │   │   ├── 010000040018.form
+│   │   │   ├── 41045.abc
+│   │   │   ├── 48918.abc
+│   │   │   ├── 48920.abc
+│   │   │   ├── 48921.abc
+│   │   │   ├── 48922.abc
+│   │   │   ├── 48923.abc
+│   │   │   ├── 48924.abc
+│   │   │   ├── 48925.abc
+│   │   │   ├── 48926.abc
+│   │   │   ├── 48927.abc
+│   │   │   ├── 50646.abc
+│   │   │   ├── 50647.abc
+│   │   │   ├── 50648.abc
+│   │   │   ├── 50649.abc
+│   │   │   ├── 50651.abc
+│   │   │   ├── 50652.abc
+│   │   │   ├── 50653.abc
+│   │   │   ├── 50654.abc
+│   │   │   ├── 50656.abc
+│   │   │   ├── 50657.abc
+│   │   │   ├── 50658.abc
+│   │   │   ├── 50659.abc
+│   │   │   ├── 50660.abc
+│   │   │   └── record.txt
+│   │   ├── 010000040019
+│   │   │   ├── 010000040019.form
+│   │   │   ├── 41044.abc
+│   │   │   ├── 48789.abc
+│   │   │   ├── 48790.abc
+│   │   │   ├── 48791.abc
+│   │   │   ├── 48792.abc
+│   │   │   ├── 48793.abc
+│   │   │   ├── 48794.abc
+│   │   │   ├── 48795.abc
+│   │   │   ├── 48796.abc
+│   │   │   ├── 48797.abc
+│   │   │   ├── 50631.abc
+│   │   │   ├── 50632.abc
+│   │   │   ├── 50633.abc
+│   │   │   ├── 50636.abc
+│   │   │   ├── 50637.abc
+│   │   │   ├── 50638.abc
+│   │   │   ├── 50639.abc
+│   │   │   ├── 50640.abc
+│   │   │   ├── 50641.abc
+│   │   │   ├── 50642.abc
+│   │   │   ├── 50643.abc
+│   │   │   └── record.txt
+│   │   ├── 010000050006
+│   │   │   ├── 010000050006.form
+│   │   │   ├── 30018.abc
+│   │   │   ├── 30019.abc
+│   │   │   ├── 30020.abc
+│   │   │   ├── 30021.abc
+│   │   │   ├── 30022.abc
+│   │   │   └── record.txt
+│   │   ├── 010000050018
+│   │   │   ├── 010000050018.form
+│   │   │   ├── 30360.abc
+│   │   │   ├── 30361.abc
+│   │   │   ├── 30362.abc
+│   │   │   ├── 30363.abc
+│   │   │   ├── 30364.abc
+│   │   │   ├── 32319.abc
+│   │   │   └── record.txt
+│   │   ├── 010000050020
+│   │   │   ├── 010000050020.form
+│   │   │   ├── 30370.abc
+│   │   │   ├── 30372.abc
+│   │   │   ├── 30373.abc
+│   │   │   ├── 32321.abc
+│   │   │   ├── 46262.abc
+│   │   │   └── record.txt
+│   │   ├── 010000050021
+│   │   │   ├── 010000050021.form
+│   │   │   ├── 30374.abc
+│   │   │   ├── 30375.abc
+│   │   │   ├── 30376.abc
+│   │   │   ├── 30377.abc
+│   │   │   ├── 30378.abc
+│   │   │   ├── 30379.abc
+│   │   │   ├── 30380.abc
+│   │   │   ├── 30381.abc
+│   │   │   ├── 30382.abc
+│   │   │   ├── 30383.abc
+│   │   │   ├── 32330.abc
+│   │   │   └── record.txt
+│   │   ├── 010000050026
+│   │   │   ├── 010000050026.form
+│   │   │   ├── 31299.abc
+│   │   │   ├── 31300.abc
+│   │   │   ├── 31301.abc
+│   │   │   ├── 31302.abc
+│   │   │   ├── 31303.abc
+│   │   │   ├── 31305.abc
+│   │   │   ├── 31306.abc
+│   │   │   ├── 31307.abc
+│   │   │   ├── 32399.abc
+│   │   │   ├── 32401.abc
+│   │   │   ├── 32403.abc
+│   │   │   ├── 32404.abc
+│   │   │   ├── 32405.abc
+│   │   │   ├── 32406.abc
+│   │   │   ├── 32407.abc
+│   │   │   ├── 32408.abc
+│   │   │   ├── 32409.abc
+│   │   │   ├── 32410.abc
+│   │   │   ├── 32411.abc
+│   │   │   ├── 32412.abc
+│   │   │   ├── 32413.abc
+│   │   │   ├── 32414.abc
+│   │   │   ├── 32415.abc
+│   │   │   ├── 39566.abc
+│   │   │   ├── 39567.abc
+│   │   │   ├── 39568.abc
+│   │   │   ├── 39569.abc
+│   │   │   ├── 39570.abc
+│   │   │   ├── 39571.abc
+│   │   │   ├── 39572.abc
+│   │   │   ├── 39573.abc
+│   │   │   ├── 39574.abc
+│   │   │   └── record.txt
+│   │   ├── 010000050028
+│   │   │   ├── 010000050028.form
+│   │   │   ├── 31288.abc
+│   │   │   ├── 31289.abc
+│   │   │   ├── 31290.abc
+│   │   │   ├── 31291.abc
+│   │   │   ├── 31292.abc
+│   │   │   ├── 31293.abc
+│   │   │   ├── 31294.abc
+│   │   │   ├── 31295.abc
+│   │   │   ├── 32368.abc
+│   │   │   ├── 32369.abc
+│   │   │   ├── 32370.abc
+│   │   │   ├── 32371.abc
+│   │   │   ├── 32372.abc
+│   │   │   ├── 32373.abc
+│   │   │   ├── 32374.abc
+│   │   │   ├── 32375.abc
+│   │   │   ├── 32376.abc
+│   │   │   ├── 32377.abc
+│   │   │   ├── 32378.abc
+│   │   │   ├── 32379.abc
+│   │   │   ├── 32380.abc
+│   │   │   ├── 32381.abc
+│   │   │   ├── 32382.abc
+│   │   │   ├── 32383.abc
+│   │   │   ├── 32385.abc
+│   │   │   ├── 32386.abc
+│   │   │   ├── 32387.abc
+│   │   │   ├── 32388.abc
+│   │   │   ├── 32389.abc
+│   │   │   ├── 32390.abc
+│   │   │   ├── 32391.abc
+│   │   │   ├── 32392.abc
+│   │   │   └── record.txt
+│   │   ├── 010000050034
+│   │   │   ├── 010000050034.form
+│   │   │   ├── 55475.abc
+│   │   │   ├── 55476.abc
+│   │   │   ├── 55477.abc
+│   │   │   ├── 55478.abc
+│   │   │   ├── 55479.abc
+│   │   │   └── record.txt
+│   │   ├── 011000000228
+│   │   │   ├── 011000000228.form
+│   │   │   ├── 20922.abc
+│   │   │   ├── 20923.abc
+│   │   │   ├── 20924.abc
+│   │   │   ├── 20925.abc
+│   │   │   ├── 20926.abc
+│   │   │   ├── 20927.abc
+│   │   │   ├── 20928.abc
+│   │   │   ├── 20929.abc
+│   │   │   ├── 20930.abc
+│   │   │   ├── 20931.abc
+│   │   │   ├── 20932.abc
+│   │   │   ├── 20933.abc
+│   │   │   ├── 20934.abc
+│   │   │   ├── 20935.abc
+│   │   │   ├── 20936.abc
+│   │   │   ├── 20937.abc
+│   │   │   ├── 20938.abc
+│   │   │   ├── 20939.abc
+│   │   │   ├── 20940.abc
+│   │   │   ├── 20941.abc
+│   │   │   ├── 20942.abc
+│   │   │   ├── 20943.abc
+│   │   │   ├── 20944.abc
+│   │   │   └── record.txt
+│   │   ├── 02SA83616564
+│   │   └── 02SA83616564_bind
+│   └── ES
+│       ├── 010000000001
+│       │   ├── 010000000001.form
+│       │   ├── 1091.abc
+│       │   ├── 1093.abc
+│       │   ├── 1094.abc
+│       │   ├── 1095.abc
+│       │   ├── 1096.abc
+│       │   └── 2949.abc
+│       ├── 010000010004
+│       ├── 010000010006
+│       ├── 010000010011
+│       ├── 010000010025
+│       │   ├── 010000010025.form
+│       │   ├── 69430.abc
+│       │   ├── 69431.abc
+│       │   └── 69432.abc
+│       ├── 010000020004
+│       ├── 010000020012
+│       ├── 010000020027
+│       ├── 010000040015
+│       ├── 010000040016
+│       ├── 010000040018
+│       ├── 010000040019
+│       ├── 010000050006
+│       ├── 010000050018
+│       │   ├── 010000050018.form
+│       │   ├── 30459.abc
+│       │   ├── 30460.abc
+│       │   ├── 30461.abc
+│       │   ├── 30462.abc
+│       │   ├── 30463.abc
+│       │   └── 32320.abc
+│       ├── 010000050020
+│       │   ├── 010000050020.form
+│       │   ├── 32322.abc
+│       │   ├── 32323.abc
+│       │   ├── 32326.abc
+│       │   ├── 32327.abc
+│       │   └── 32328.abc
+│       ├── 010000050021
+│       │   ├── 010000050021.form
+│       │   ├── 30464.abc
+│       │   ├── 30465.abc
+│       │   ├── 30466.abc
+│       │   ├── 30467.abc
+│       │   ├── 30468.abc
+│       │   ├── 30469.abc
+│       │   ├── 30470.abc
+│       │   ├── 30471.abc
+│       │   ├── 30472.abc
+│       │   ├── 30473.abc
+│       │   └── 30474.abc
+│       ├── 010000050026
+│       ├── 010000050028
+│       ├── 010000050034
+│       ├── 011000000228
+│       └── 02SA83616564
+├── delete
+│   └── crafite_ids
+├── easter_egg
+│   ├── Instruments
+│   │   ├── blue.mp3
+│   │   ├── green.mp3
+│   │   ├── red.mp3
+│   │   └── yellow.mp3
+│   ├── Numbers
+│   │   ├── blue.mp3
+│   │   ├── green.mp3
+│   │   ├── red.mp3
+│   │   └── yellow.mp3
+│   └── theme.cfg
+├── logcat
+│   ├── endpoints.txt
+│   ├── storypod_logcat_0.txt
+│   ├── storypod_logcat_10.txt
+│   ├── storypod_logcat_11.txt
+│   ├── storypod_logcat_12.txt
+│   ├── storypod_logcat_13.txt
+│   ├── storypod_logcat_14.txt
+│   ├── storypod_logcat_15.txt
+│   ├── storypod_logcat_16.txt
+│   ├── storypod_logcat_17.txt
+│   ├── storypod_logcat_18.txt
+│   ├── storypod_logcat_19.txt
+│   ├── storypod_logcat_1.txt
+│   ├── storypod_logcat_20.txt
+│   ├── storypod_logcat_21.txt
+│   ├── storypod_logcat_22.txt
+│   ├── storypod_logcat_23.txt
+│   ├── storypod_logcat_24.txt
+│   ├── storypod_logcat_25.txt
+│   ├── storypod_logcat_26.txt
+│   ├── storypod_logcat_27.txt
+│   ├── storypod_logcat_28.txt
+│   ├── storypod_logcat_29.txt
+│   ├── storypod_logcat_2.txt
+│   ├── storypod_logcat_30.txt
+│   ├── storypod_logcat_31.txt
+│   ├── storypod_logcat_32.txt
+│   ├── storypod_logcat_33.txt
+│   ├── storypod_logcat_34.txt
+│   ├── storypod_logcat_35.txt
+│   ├── storypod_logcat_36.txt
+│   ├── storypod_logcat_37.txt
+│   ├── storypod_logcat_38.txt
+│   ├── storypod_logcat_39.txt
+│   ├── storypod_logcat_3.txt
+│   ├── storypod_logcat_40.txt
+│   ├── storypod_logcat_41.txt
+│   ├── storypod_logcat_42.txt
+│   ├── storypod_logcat_43.txt
+│   ├── storypod_logcat_44.txt
+│   ├── storypod_logcat_45.txt
+│   ├── storypod_logcat_46.txt
+│   ├── storypod_logcat_47.txt
+│   ├── storypod_logcat_48.txt
+│   ├── storypod_logcat_49.txt
+│   ├── storypod_logcat_4.txt
+│   ├── storypod_logcat_50.txt
+│   ├── storypod_logcat_51.txt
+│   ├── storypod_logcat_52.txt
+│   ├── storypod_logcat_53.txt
+│   ├── storypod_logcat_54.txt
+│   ├── storypod_logcat_55.txt
+│   ├── storypod_logcat_56.txt
+│   ├── storypod_logcat_57.txt
+│   ├── storypod_logcat_58.txt
+│   ├── storypod_logcat_59.txt
+│   ├── storypod_logcat_5.txt
+│   ├── storypod_logcat_60.txt
+│   ├── storypod_logcat_61.txt
+│   ├── storypod_logcat_62.txt
+│   ├── storypod_logcat_63.txt
+│   ├── storypod_logcat_64.txt
+│   ├── storypod_logcat_65.txt
+│   ├── storypod_logcat_6.txt
+│   ├── storypod_logcat_7.txt
+│   ├── storypod_logcat_8.txt
+│   ├── storypod_logcat_9.txt
+│   └── storypod_logcat.tmp
+├── persistence_data
+├── res_update
+│   └── tone
+├── System Volume Information
+│   └── IndexerVolumeGuid
+├── test_audio
+│   ├── test_agin.mp3
+│   └── test_speaker.mp3
+├── tone
+│   ├── netconf_attempt_connect_english.mp3
+│   ├── netconf_attempt_connect_spanish.mp3
+│   ├── netconf_cancel_english.mp3
+│   ├── netconf_cancel_spanish.mp3
+│   ├── netconf_connect_fail.mp3
+│   ├── netconf_connecting.mp3
+│   ├── netconf_connect_success_english.mp3
+│   ├── netconf_connect_success_spanish.mp3
+│   ├── netconf_disable_english.mp3
+│   ├── netconf_disable_spanish.mp3
+│   ├── netconf_enable_english.mp3
+│   ├── netconf_enable_spanish.mp3
+│   ├── netconf_need_network_english.mp3
+│   ├── netconf_need_network_spanish.mp3
+│   ├── netconf_reset_english.mp3
+│   ├── netconf_reset_spanish.mp3
+│   ├── netconf_start_english.mp3
+│   ├── netconf_start_spanish.mp3
+│   ├── netconf_wrong_password_english.mp3
+│   ├── netconf_wrong_password_spanish.mp3
+│   ├── system_book_still_there_english.mp3
+│   ├── system_book_still_there_spanish.mp3
+│   ├── system_book_time_up_english.mp3
+│   ├── system_book_time_up_spanish.mp3
+│   ├── system_CE_end.mp3
+│   ├── system_CE_start.mp3
+│   ├── system_CE_waiting_for_answer.mp3
+│   ├── system_craftie_read.mp3
+│   ├── system_factory_reset.mp3
+│   ├── system_headphone_error_english.mp3
+│   ├── system_headphone_error_spanish.mp3
+│   ├── system_icraftie_error_english.mp3
+│   ├── system_icraftie_error_spanish.mp3
+│   ├── system_inactive_button.mp3
+│   ├── system_maxvol.mp3
+│   ├── system_maxvol.pcm
+│   ├── system_memory_game_blue_voice_english.mp3
+│   ├── system_memory_game_blue_voice.mp3
+│   ├── system_memory_game_blue_voice_spanish.mp3
+│   ├── system_memory_game_correct_english.mp3
+│   ├── system_memory_game_correct.mp3
+│   ├── system_memory_game_correct_spanish.mp3
+│   ├── system_memory_game_fail_english.mp3
+│   ├── system_memory_game_fail.mp3
+│   ├── system_memory_game_fail_spanish.mp3
+│   ├── system_memory_game_green_voice_english.mp3
+│   ├── system_memory_game_green_voice.mp3
+│   ├── system_memory_game_green_voice_spanish.mp3
+│   ├── system_memory_game_music.mp3
+│   ├── system_memory_game_new_record_english.mp3
+│   ├── system_memory_game_new_record.mp3
+│   ├── system_memory_game_new_record_spanish.mp3
+│   ├── system_memory_game_red_voice_english.mp3
+│   ├── system_memory_game_red_voice.mp3
+│   ├── system_memory_game_red_voice_spanish.mp3
+│   ├── system_memory_game_start_english.mp3
+│   ├── system_memory_game_start.mp3
+│   ├── system_memory_game_start_spanish.mp3
+│   ├── system_memory_game_yellow_voice_english.mp3
+│   ├── system_memory_game_yellow_voice.mp3
+│   ├── system_memory_game_yellow_voice_spanish.mp3
+│   ├── system_mycraftie_first_time_english.mp3
+│   ├── system_mycraftie_first_time_spanish.mp3
+│   ├── system_mycraftie_new_message_english.mp3
+│   ├── system_mycraftie_new_message_spanish.mp3
+│   ├── system_play_continue.mp3
+│   ├── system_play_forward.mp3
+│   ├── system_play_forward.pcm
+│   ├── system_play_next.mp3
+│   ├── system_play_no_craftie_1_english.mp3
+│   ├── system_play_no_craftie_1_spanish.mp3
+│   ├── system_play_no_craftie_2_english.mp3
+│   ├── system_play_no_craftie_2_spanish.mp3
+│   ├── system_play_no_craftie_3_english.mp3
+│   ├── system_play_no_craftie_3_spanish.mp3
+│   ├── system_play_pause.mp3
+│   ├── system_play_previous.mp3
+│   ├── system_play_restart.mp3
+│   ├── system_play_rewind.mp3
+│   ├── system_play_rewind.pcm
+│   ├── system_power_charge.mp3
+│   ├── system_power_low_english.mp3
+│   ├── system_power_low_spanish.mp3
+│   ├── system_power_off_low_battery_english.mp3
+│   ├── system_power_off_low_battery_spanish.mp3
+│   ├── system_power_off.mp3
+│   ├── system_power_on.mp3
+│   ├── system_QA_correct_english.mp3
+│   ├── system_QA_correct_spanish.mp3
+│   ├── system_QA_easter_egg_blue.mp3
+│   ├── system_QA_easter_egg_green.mp3
+│   ├── system_QA_easter_egg_red.mp3
+│   ├── system_QA_easter_egg_yellow.mp3
+│   ├── system_QA_end.mp3
+│   ├── system_QA_incorrect_once_english.mp3
+│   ├── system_QA_incorrect_once_spanish.mp3
+│   ├── system_QA_incorrect_twice_english.mp3
+│   ├── system_QA_incorrect_twice_spanish.mp3
+│   ├── system_QA_ready_english.mp3
+│   ├── system_QA_ready_spanish.mp3
+│   ├── system_qa_start.mp3
+│   ├── system_QA_time_up_english.mp3
+│   ├── system_QA_time_up_spanish.mp3
+│   ├── system_QA_waiting_for_answer.mp3
+│   ├── system_sticker_first_time_english.mp3
+│   ├── system_sticker_first_time_spanish.mp3
+│   ├── system_sticker_new_message_english.mp3
+│   ├── system_sticker_new_message_spanish.mp3
+│   ├── system_token_first_time_english.mp3
+│   ├── system_token_first_time_spanish.mp3
+│   ├── system_token_new_message_english.mp3
+│   ├── system_token_new_message_spanish.mp3
+│   ├── system_volume_down.mp3
+│   ├── system_volume_down.pcm
+│   ├── system_volume_up.mp3
+│   ├── system_volume_up.pcm
+│   ├── update_ota_fail_english.mp3
+│   ├── update_ota_fail_spanish.mp3
+│   ├── update_OTA_forced_lowbat_english.mp3
+│   ├── update_OTA_forced_lowbat_spanish.mp3
+│   ├── update_OTA_forced_start_english.mp3
+│   ├── update_OTA_forced_start_spanish.mp3
+│   ├── update_OTA_start_english.mp3
+│   ├── update_OTA_start_spanish.mp3
+│   ├── update_OTA_success_english.mp3
+│   └── update_OTA_success_spanish.mp3
+└── tree.txt
+
+56 directories, 626 files
