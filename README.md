@@ -1,4 +1,4 @@
-[Discord](https://discord.gg/RdM4kXQYTu)
+[![Join our Discord](https://img.shields.io/discord/1392219938726481982?logo=discord&color=7289DA&label=Discord)](https://discord.gg/RdM4kXQYTu)
 
 # Goals
 
