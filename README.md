@@ -5,7 +5,6 @@
   - FTP server hosting sd card
   - Logs over wifi/bt serial
   - Play custom crafties via mp3
-  - export storypod crafties to mp3
   - bluetooth speaker mode?
   - listen to network traffic
 
@@ -18,6 +17,12 @@
   - connects to amazon mqtt [mqtt\_host = a1f7oqdu8j5opv-ats.iot.us-east-1.amazonaws.com, mqtt\_port = 443, mqtt\_topic\_prefix = storypod.]
   - api server : [https://api.storypod.com/api/v1/](https://api.storypod.com/api/v1/) or v2/
 
+-----
+
+## Decrypt Crafties Audio.
+  - to access your crafties, you need to disassemble and locate the internal micro sd card.
+  - get the sd card to your computer and copy the contents to a safe place. you dont want to corrupt them on the device.
+  - run `decrypt_crafties.py 00000.abc` or `decrypt_crafties.py crafties/100000000000/` (for the entire folder) this will bruteforce the XOR key used to encrypt it and save it as mp3
 -----
 
 ## Device & OS Internals
