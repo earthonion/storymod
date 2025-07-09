@@ -5,7 +5,6 @@
   - FTP server hosting sd card
   - Logs over wifi/bt serial
   - Play custom crafties via mp3
-  - export storypod crafties to mp3
   - bluetooth speaker mode?
   - listen to network traffic
 
@@ -20,9 +19,18 @@
 
 -----
 
+## Decrypt Crafties Audio.
+  - to access your crafties, you need to disassemble your storypod and locate the internal micro sd card.
+  - get the sd card to your computer and copy the contents to a safe place. you dont want to corrupt them on the device.
+  - run `decrypt_crafties.py 00000.abc` or `decrypt_crafties.py crafties/100000000000/` (for the entire folder) this will bruteforce the XOR key used to encrypt it and save it as mp3
+    
+-----
+
 ## Device & OS Internals
 
   - **Storage:** The device uses NOR flash storage.
+      - i was able to dump the flash using a simple spi flasher sketch for a ESP8266 (nodemcu amica). it appears to be pure arm instuctions (no filesystem). i found some interesting chinese test audio that appears to be the same as that found in /tone on the sd card.
+      - i cannot upload the dump as it containd wifi credentials and uuid of the device in plain text. you may use the spi flashe code provided
   - **Audio:** The core media player is part of the `cedarx` framework. The audio HAL is configured for a specific format and rate (`format: 0x4, rate: 0x2000`).
  
 -----
