@@ -20,7 +20,7 @@
 -----
 
 ## Decrypt Crafties Audio.
-  - to access your crafties, you need to disassemble and locate the internal micro sd card.
+  - to access your crafties, you need to disassemble your storypod and locate the internal micro sd card.
   - get the sd card to your computer and copy the contents to a safe place. you dont want to corrupt them on the device.
   - run `decrypt_crafties.py 00000.abc` or `decrypt_crafties.py crafties/100000000000/` (for the entire folder) this will bruteforce the XOR key used to encrypt it and save it as mp3
 -----
