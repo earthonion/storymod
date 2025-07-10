@@ -44,7 +44,7 @@
   
 -----
 
-## Local File System
+## Local File System (internal Micro SD card)
 
   - **System Sounds:** Default system sounds are located in `file:///tone/`.
   - **Downloaded Content:**
