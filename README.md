@@ -55,9 +55,9 @@
             - Example: `http://audiocnd.storypod.com/audios/ffffffff-ffff-ffff-ffff-ffffffffffff.mp3?Expires=0000000000&Policy=[POLICY_len_220chars]&Signature=[signature_length_344char]&Key-Pair-Id=[KEYPAIRID]`
           
 -----
-##Logs
+## Logs
 - Logs can be found on the sd card on /logcat/storypod_logcat_[num].txt
-- every time your storypod powers off the most recent log gets sent to storypods chinese servers.
+- every time your storypod powers off the most recent log gets sent to storypods chinese servers. this is also where you can find a valid access token for interacting with the api
 ```
 PUT /analysis/log/storypod/20250711/[STORYPOD_UUID]/lucky_storypod_1752170748.log HTTP/1.1
 Authorization:OSS LTAI4GDaEphKffffffff6MWb:Gddfdjnsdjnsk8cfWGLbvmyMthAA8=
