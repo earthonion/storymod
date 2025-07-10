@@ -28,11 +28,18 @@
 
 ## Device & OS Internals
 
-  - **Storage:** The device uses NOR flash storage.
+  - **Compute**: XR872at ARM Cortex MCU
+
+  - **Storage**: Gigadevice GD25Q64CSIG NOR flash storage.
       - i was able to dump the flash using a simple spi flasher sketch for a ESP8266 (nodemcu amica). it appears to be pure arm instuctions (no filesystem). i found some interesting chinese test audio that appears to be the same as that found in /tone on the sd card.
       - i cannot upload the dump as it containd wifi credentials and uuid of the device in plain text. you may use the spi flashe code provided
+  - **Bluetooth** : BK3266L
+
+  - **Audio Amp**: HT6873
+
   - **Audio:** The core media player is part of the `cedarx` framework. The audio HAL is configured for a specific format and rate (`format: 0x4, rate: 0x2000`).
- 
+
+  
 -----
 
 ## Local File System
