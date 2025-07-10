@@ -55,6 +55,22 @@
             - Example: `http://audiocnd.storypod.com/audios/ffffffff-ffff-ffff-ffff-ffffffffffff.mp3?Expires=0000000000&Policy=[POLICY_len_220chars]&Signature=[signature_length_344char]&Key-Pair-Id=[KEYPAIRID]`
           
 -----
+##Logs
+- Logs can be found on the sd card on /logcat/storypod_logcat_[num].txt
+- every time your storypod powers off the most recent log gets sent to storypods chinese servers.
+```
+PUT /analysis/log/storypod/20250711/[STORYPOD_UUID]/lucky_storypod_1752170748.log HTTP/1.1
+Authorization:OSS LTAI4GDaEphKffffffff6MWb:Gddfdjnsdjnsk8cfWGLbvmyMthAA8=
+Content-Md5: JlnVgZKOfD7+Uddddddabg==
+Content-Type: application/x-www-form-urlencoded
+Date: Thu, 10 Jul 2025 18:05:48 GMT
+Host: storypod.oss-us-west-1.aliyuncs.com
+Transfer-Encoding: chunked
+User-Agent: curl/7.58.0
+Accept: */*
+Connection: close
+```
+-----
 
 ## API & Endpoints
 
