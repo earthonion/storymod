@@ -37,7 +37,7 @@
 
   - **Audio Amp**: HT6873
 
-  - ** NFC Reader **: NXP SLRC61003 
+  - **NFC Reader**: NXP SLRC61003 
 
   - **Audio:** The core media player is part of the `cedarx` framework. The audio HAL is configured for a specific format and rate (`format: 0x4, rate: 0x2000`).
 
