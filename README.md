@@ -118,6 +118,14 @@ The device follows a multi-step process to establish its connection to the AWS I
 
   - **Generic format**: `http://audiocnd.storypod.com/audios/[AUDIO_UUID].mp3`
   - **Example**: `http://audiocnd.storypod.com/audios/1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d.mp3?Expires=...`
+  - 
+  - *Note*: notice the `http`. Yup that means no tls when downloading from the storypod. crafties can be intercepted with a simple mitm replay attack!
+      - `curl -v \
+     -H "User-Agent: Allwinner/CedarX 2.7" \
+     -H "Range: bytes=0-" \
+     -H "Connection: close" \
+     "http://audiocnd.storypod.com/audios/4ffffffffffffffff.mp3?Expires=1752158977&Policy=edvsddfsvsdvdsvd&Signature=dhbcashfofoajf&Key-Pair-Id=djbsadhvbjsahv" \
+     -o "4fffffffffffffffmp3"`
 
 -----
 
