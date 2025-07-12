@@ -50,6 +50,8 @@ python decrypt_crafties.py crafties/100000000000/
 
 The script bruteforces the XOR encryption key and outputs standard MP3 files.
 
+Has issues with Q & A crafties. Further research needed.
+
 ## File System Structure
 
 ### System Audio Locations
