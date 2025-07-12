@@ -85,7 +85,7 @@ Connection: close
   - [https://api.storypod.com/api/v2/device/crafite/craftielist?languageCode=EN](https://api.storypod.com/api/v2/device/crafite/craftielist?languageCode=EN)
   - [https://api.storypod.com/api/v2/device/crafite/playlist?languageCode=EN](https://api.storypod.com/api/v2/device/crafite/playlist?languageCode=EN)
         - this one seems to be the request that get sent right after you scan a craftieon the nfc reader. it appears to send nfc data. this can be seen in the logs like this:
-        ```
+        
             .[0;32m[INFO] <rc6xx_get_data_handle 563> : crafite_uuid = 010000090099, crafite_psyid = ffffffff530104e0.[0m
             .[0;32m[INFO] <cardinfo_handle_task 3296> : is_crafite_bind = 0 is_mycrafite = 0 is_playlistexist = 0.[0m
             .[0m[DBUG] <get_playlist_file 1634> : https_url( https://api.storypod.com/api/v2/device/crafite/playlist?languageCode=EN ).[0m
@@ -96,14 +96,14 @@ Connection: close
             GET /api/v1/device/crafite/download/txt?checkResult=1&device_id=[DEVICE_UUID]&crafite_uuid=010000090099&language=1 HTTP/1.1
             Host: api.storypod.com
             User-Agent: curl/7.47.0
-            access-token: a246e23dc286bc51c342e22499ac0672762f0130f9e9e779a7ab9250e60bd1dd #<----------------this access token can be used for all requests
+            access-token: a246e23dc286bc51c342e22499ac0672ffffffffffffffffffffffffffffffff #<----------------this access token can be used for all requests
             client-source: DEVICE
             client-type: device_[DEVICE_UUID]
             Accept: */*
             
             
             [/header]
-        ```
+        
   - [https://api.storypod.com/api/v2/device/crafite/playlist?languageCode=ES](https://api.storypod.com/api/v2/device/crafite/playlist?languageCode=ES)
   - [https://api.storypod.com/api/v2/device/deviceaudioversion/latest?languageCode=EN](https://api.storypod.com/api/v2/device/deviceaudioversion/latest?languageCode=EN)
   - [https://api.storypod.com/api/v2/device/get?languageCode=EN](https://api.storypod.com/api/v2/device/get?languageCode=EN)
