@@ -86,7 +86,7 @@ Connection: close
   - [https://api.storypod.com/api/v2/device/crafite/playlist?languageCode=EN](https://api.storypod.com/api/v2/device/crafite/playlist?languageCode=EN)
         - this one seems to be the request that get sent right after you scan a craftieon the nfc reader. it appears to send nfc data. this can be seen in the logs like this:
         
-            .[0;32m[INFO] <rc6xx_get_data_handle 563> : crafite_uuid = 010000090099, crafite_psyid = ffffffff530104e0.[0m
+            .[0;32m[INFO] <rc6xx_get_data_handle 563> : crafite_uuid = 010000090099, crafite_psyid = ffffffff530104e0.[0m #<------ psyid is the serial number scanned from the nfc 
             .[0;32m[INFO] <cardinfo_handle_task 3296> : is_crafite_bind = 0 is_mycrafite = 0 is_playlistexist = 0.[0m
             .[0m[DBUG] <get_playlist_file 1634> : https_url( https://api.storypod.com/api/v2/device/crafite/playlist?languageCode=EN ).[0m
             .[0m[DBUG] <get_playlist_file 1635> : post_body = {"device_id":"DEVICE_UUID","crafite_uuid":"010000090099","crafite_card":"ffffffff530104e0","current_audio_id":0,"es_current_audio_id":0,"en_version":0,"es_version":0,"firmware":"0.0.7.16"}.[0m
