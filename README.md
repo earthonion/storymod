@@ -26,6 +26,7 @@ This project aims to reverse engineer the StoryPod device to enable:
 |-----------|-------|---------|
 | **CPU** | XR872at ARM Cortex MCU | Main processor |
 | **Storage** | Gigadevice GD25Q64CSIG NOR Flash | Internal storage |
+| **Mass Storage** | 16gb micro SD card | Mass storage (for Craftie audio/ logs) |
 | **Bluetooth** | BK3266L | Wireless connectivity |
 | **Audio Amp** | HT6873 | Audio amplification |
 | **NFC Reader** | NXP SLRC61003 | Craftie detection |
