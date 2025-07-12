@@ -16,7 +16,7 @@ This project aims to reverse engineer the StoryPod device to enable:
 
 ### Device Architecture
 - Runs **XRADIO IOT CEDARX 1.3.14** firmware
-- **Security concern**: WiFi credentials stored in plain text in logs
+- **Security concern**: WiFi credentials stored in plain text in logs sent over unencrypted connection to Chinese servers every power down
 - Connects to Amazon MQTT broker: `a1f7oqdu8j5opv-ats.iot.us-east-1.amazonaws.com:443`
 - API endpoints: `https://api.storypod.com/api/v1/` and `v2/`
 
