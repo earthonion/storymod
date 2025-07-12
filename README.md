@@ -68,6 +68,7 @@ file:///craftie/010000040019/40202.abc
 ```
 http://audiocnd.storypod.com/audios/[UUID].mp3?Expires=[TIME]&Policy=[POLICY]&Signature=[SIG]&Key-Pair-Id=[ID]
 ```
+`.form` files are the playlist files. They hold the audio IDs for the tracks. along with information about the craftie.
 
 ## Logging System
 
