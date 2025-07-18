@@ -174,4 +174,35 @@ The NOR flash contains ARM instructions with embedded Chinese test audio. Due to
 
 ---
 
+## Known UART Commands
+
+```
+test
+test pcba_test 0
+test ls /
+test clear
+test get_license
+test get_test_result
+test upload
+test reset #wipes sdccard
+test delete
+test connect_wlan ssid password
+test get_wlan_status
+test machine_test
+reboot
+nfc make_init
+nfc make_read # includes UID and craftie_UUID
+nfc make_write
+cedarx
+cedarx play #crashes
+cedarx stop
+cedarx setbuf
+cedarx setvol 100
+cedarx bufinfo
+cedarx showbuf
+cedarx aacsbr
+cedarx getpos
+cedarx seek #crashes
+
+```
 *This documentation is for educational and research purposes. Always respect device warranties and applicable laws when reverse engineering hardware.*
