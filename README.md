@@ -16,7 +16,7 @@ This project aims to reverse engineer the StoryPod device to enable:
 
 ### Device Architecture
 - Runs **XRADIO IOT CEDARX 1.3.14** firmware
-- **Security concern**: WiFi credentials stored in plain text in logs sent over unencrypted connection to Chinese servers every power down
+- **Security concern**: WiFi credentials stored in plain text in logs
 - Connects to Amazon MQTT broker: `a1f7oqdu8j5opv-ats.iot.us-east-1.amazonaws.com:443`
 - API endpoints: `https://api.storypod.com/api/v1/` and `v2/`
 
@@ -26,7 +26,6 @@ This project aims to reverse engineer the StoryPod device to enable:
 |-----------|-------|---------|
 | **CPU** | XR872at ARM Cortex MCU | Main processor |
 | **Storage** | Gigadevice GD25Q64CSIG NOR Flash | Internal storage |
-| **Mass Storage** | 16gb micro SD card | Mass storage (for Craftie audio/ logs) |
 | **Bluetooth** | BK3266L | Wireless connectivity |
 | **Audio Amp** | HT6873 | Audio amplification |
 | **NFC Reader** | NXP SLRC61003 | Craftie detection |
@@ -50,8 +49,6 @@ python decrypt_crafties.py crafties/100000000000/
 
 The script bruteforces the XOR encryption key and outputs standard MP3 files.
 
-Has issues with Q & A crafties. Further research needed.
-
 ## File System Structure
 
 ### System Audio Locations
@@ -68,7 +65,6 @@ file:///craftie/010000040019/40202.abc
 ```
 http://audiocnd.storypod.com/audios/[UUID].mp3?Expires=[TIME]&Policy=[POLICY]&Signature=[SIG]&Key-Pair-Id=[ID]
 ```
-`.form` files are the playlist files. They hold the audio IDs for the tracks. along with information about the craftie.
 
 ## Logging System
 
@@ -160,6 +156,79 @@ http://audiocnd.storypod.com/audios/[AUDIO_UUID].mp3?[AUTH_PARAMS]
 - Ocean sounds: `https://piccdn.storypod.com/white_noise/system_white_noise_ocean.mp3`
 - Cricket sounds: `https://piccdn.storypod.com/white_noise/system_white_noise_crickets.mp3`
 
+## UART Access
+
+UART RX and TX connect directly to the D+ and D- pins of the micro USB charge port. To access UART:
+
+1. **Hardware Setup**: Cut an old USB cable - white and green wires are RX/TX, black is ground
+2. **Connection**: Connect to a USB-to-UART adapter or Arduino
+3. **Settings**: Standard UART configuration (likely 115200 baud)
+
+### Known UART Commands
+
+#### Test Mode Commands
+```bash
+test pcba_test 1          # Enter test/manufacturing mode
+test pcba_test 0          # Exit test mode  
+test ls /path             # File system browser
+test get_device           # Device info (UUID, chip ID, battery)
+test get_license          # License information
+test get_test_result      # Test results
+test get_wlan_status      # WiFi status
+test connect_wlan ssid password  # Connect to WiFi
+test machine_test         # Hardware test
+test upload               # File upload (needs parameters)
+test delete /path         # Delete files
+test clear                # Clear operation
+test reset                # Factory reset (WIPES SD CARD!)
+```
+
+#### NFC Commands
+```bash
+nfc make_init             # Initialize NFC
+nfc make_read             # Read NFC card (includes UID and Craftie UUID)
+nfc make_write            # Write to NFC card
+```
+
+#### CedarX Audio Framework
+```bash
+cedarx showbuf            # Show audio buffer status
+cedarx bufinfo            # Buffer information
+cedarx aacsbr             # AAC SBR codec settings
+cedarx setbuf file://path size1 size2 size3  # Set audio buffer
+cedarx setvol 100         # Set volume (0-100)
+cedarx getpos             # Get playback position
+cedarx play               # Start playback (CRASHES - avoid)
+cedarx stop               # Stop playback
+cedarx seek               # Seek position (CRASHES - avoid)
+```
+
+#### System Commands
+```bash
+reboot                    # Restart device
+```
+
+### Command Examples
+```bash
+# Enter test mode and explore
+test pcba_test 1
+test get_device
+test ls /
+
+# Read NFC Craftie card
+nfc make_read
+
+# Audio buffer configuration
+cedarx showbuf
+cedarx setbuf file://test_audio/test_speaker.mp3 160078 4096 0
+```
+
+### Safety Notes
+- **`test reset`** wipes the SD card completely
+- **`cedarx play`** and **`cedarx seek`** cause system crashes/reboots
+- Always backup SD card contents before experimenting
+- Battery level affects stability - keep device charged
+
 ## Flash Memory Analysis
 
 The NOR flash contains ARM instructions with embedded Chinese test audio. Due to security concerns (contains WiFi credentials and device UUID), flash dumps are not shared publicly. Use the provided SPI flasher code for your own analysis.
@@ -174,35 +243,4 @@ The NOR flash contains ARM instructions with embedded Chinese test audio. Due to
 
 ---
 
-## Known UART Commands
-
-```
-test
-test pcba_test 0
-test ls /
-test clear
-test get_license
-test get_test_result
-test upload
-test reset #wipes sdccard
-test delete
-test connect_wlan ssid password
-test get_wlan_status
-test machine_test
-reboot
-nfc make_init
-nfc make_read # includes UID and craftie_UUID
-nfc make_write
-cedarx
-cedarx play #crashes
-cedarx stop
-cedarx setbuf
-cedarx setvol 100
-cedarx bufinfo
-cedarx showbuf
-cedarx aacsbr
-cedarx getpos
-cedarx seek #crashes
-
-```
 *This documentation is for educational and research purposes. Always respect device warranties and applicable laws when reverse engineering hardware.*
