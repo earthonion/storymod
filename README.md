@@ -162,7 +162,7 @@ UART RX and TX connect directly to the D+ and D- pins of the micro USB charge po
 
 1. **Hardware Setup**: Cut an old USB cable - white and green wires are RX/TX, black is ground
 2. **Connection**: Connect to a USB-to-UART adapter or Arduino
-3. **Settings**: Standard UART configuration (likely 115200 baud)
+3. **Settings**: 115200 baud
 
 ### Known UART Commands
 
@@ -187,7 +187,7 @@ test reset                # Factory reset (WIPES SD CARD!)
 ```bash
 nfc make_init             # Initialize NFC
 nfc make_read             # Read NFC card (includes UID and Craftie UUID)
-nfc make_write            # Write to NFC card
+nfc make_write            # Write to NFC card (not tested)
 ```
 
 #### CedarX Audio Framework
@@ -210,8 +210,8 @@ reboot                    # Restart device
 
 ### Command Examples
 ```bash
-# Enter test mode and explore
-test pcba_test 1
+# Enter test mode
+test pcba_test 1 #says something in Chinese then tests LEDs 
 test get_device
 test ls /
 
@@ -220,7 +220,7 @@ nfc make_read
 
 # Audio buffer configuration
 cedarx showbuf
-cedarx setbuf file://test_audio/test_speaker.mp3 160078 4096 0
+cedarx setbuf file://test_audio/test_speaker.mp3 160078 4096 0 #returns success but unsure of what this does
 ```
 
 ### Safety Notes
