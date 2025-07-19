@@ -31,7 +31,9 @@ This project aims to reverse engineer the StoryPod device to enable:
 | **NFC Reader** | NXP SLRC61003 | Craftie detection |
 
 **Audio Framework**: Uses the `cedarx` media player with HAL configured for format `0x4` and rate `0x2000`.
+## Crafties
 
+the crafties are little plushies with a NFC ICODE SLIX ISO 15693 chip. the data contains the Serial number and the craftie UUID in plain text.
 ## Extracting Craftie Audio
 
 ### Prerequisites
