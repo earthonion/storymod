@@ -218,6 +218,7 @@ test get_device
 test ls /
 
 # Read NFC Craftie card
+nfc make_init
 nfc make_read
 
 # Audio buffer configuration
