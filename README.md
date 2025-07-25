@@ -7,10 +7,11 @@
 This project aims to reverse engineer the StoryPod device to enable:
 
 - **FTP server hosting** for SD card access
-- **Wireless logging** via WiFi/Bluetooth serial
+- **Wireless logging** via WiFi/Bluetooth serial 
 - **Custom audio playback** for Crafties via MP3
-- **Bluetooth speaker mode** functionality  
-- **Network traffic monitoring** capabilities
+    - likely possibly with custom firmware pointing API to your own server. seems like the AllWinner FW image has checksums which I haven't noticed figured out the algorithm for yet.
+
+- **Network traffic monitoring** capabilities #done! all requests not logged are sent over http. access tokens can be reused. 
 
 ## Key Discoveries
 
