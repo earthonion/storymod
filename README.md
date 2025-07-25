@@ -33,7 +33,7 @@ This project aims to reverse engineer the StoryPod device to enable:
 **Audio Framework**: Uses the `cedarx` media player with HAL configured for format `0x4` and rate `0x2000`.
 ## Crafties
 
-the crafties are little plushies with a NFC ICODE SLIX ISO 15693 chip. the data contains the Serial number and the craftie UUID in plain text.
+the crafties are little plushies with a NFC ICODE SLIX ISO 15693 chip. the data contains the Serial number and the craftie UUID encrypted with AES.
 ## Extracting Craftie Audio
 
 ### Prerequisites
