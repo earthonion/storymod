@@ -189,7 +189,7 @@ test reset                # Factory reset (WIPES SD CARD!)
 ```bash
 nfc make_init             # Initialize NFC
 nfc make_read             # Read NFC card (includes UID and Craftie UUID)
-nfc make_write            # Write to NFC card (not tested)
+nfc make_write crafite_uuid # Write AES encrypted UUID to NFC card User Data
 ```
 
 #### CedarX Audio Framework
