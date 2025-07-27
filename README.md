@@ -249,6 +249,7 @@ The NOR flash contains ARM instructions with embedded Chinese test audio. Due to
 - **Automatic log uploads** to foreign servers
 - **Weak XOR encryption** for Craftie audio
 - **Access tokens** exposed in logs
+- **No Validation for Crafties** a random hex can be used for the craftie_psyid (the NFC chip UID) 
 
 ---
 
