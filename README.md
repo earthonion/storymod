@@ -7,10 +7,16 @@
 This project aims to reverse engineer the StoryPod device to enable:
 
 - **Wireless logging** via WiFi/Bluetooth serial 
+    - can be done by soldering a esp32 to the uart pins then have it run uart - UDP.
 - **Custom audio playback** for Crafties via MP3
-    - likely possibly with custom firmware pointing API to your own server. seems like the AllWinner FW image has checksums which I haven't figured out the algorithm for yet.
+    - done! since the audiocnd is sent unencrypted, you can create a custom server to host your own files, then change the DNS record of audiocnd.storypod.com to point to your own server. then you can use uart command `nfc make_write' to create a custom nfc tag (must be NXP icode slix) to write a UUID to the NFC chip (must be a valid one). put that chip on your own object and it will play the mp3 your server is serving.
 
-- **Network traffic monitoring** capabilities #done! all requests not logged are sent over http. access tokens can be reused. 
+I cannot share valid UUIDs as this could be used to clone Crafties.
+
+- **Network traffic monitoring** capabilities 
+    -done! all requests not logged are sent over http. access tokens can be reused. 
+
+## all goals have been completed. if you have any questions feel free to reach out on discord. 
 
 ## Key Discoveries
 
